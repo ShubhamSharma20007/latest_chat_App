@@ -2,9 +2,9 @@ const env = require('dotenv').config();
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const dbConnection = require('./config/dbConnection');
-const routes = require('./routes/userRoute');
-const messageroute = require('./routes/messageRoute');
+const dbConnection = require('./config/dbConnection.js');
+const routes = require('./routes/userRoute.js');
+const messageroute = require('./routes/messageRoute.js');
 const soket = require('socket.io');
 dbConnection()
 
